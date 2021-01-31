@@ -31,17 +31,17 @@
 
       // Step 2. Add custom icon
 
-      var iconBase = 'http://maps.google.com/mapfiles/kml/pushpin/pink-pushpin.png';
+      var iconBase = 'http://maps.google.com/mapfiles/ms/micons/pink-dot.png';
 
       var marker = new google.maps.Marker({
         position: {lat: 35.69468878629994, lng: 139.7008240497798},
-        icon: iconBase + 'flag_maps.png',
+        icon: iconBase,
         map: map
       });
 
       // Step 3. Add info window
 
-      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">Custom info window</h2><p>This is a cool custom info window.</p></div>';
+      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">地点：焼肉幸永</h2><p>理由：お気に入りの焼肉屋だから</p></div>';
 
       var infowindow = new google.maps.InfoWindow({
         content: contentString
